@@ -1,0 +1,151 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Styles */
+main {
+    padding: 20px 0;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #3498db;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #8e44ad;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Messages Styles */
+#anime-love-messages .messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+#anime-love-messages .message {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    max-width: 800px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#anime-love-messages .message:nth-child(odd) {
+    animation-delay: 0.5s;
+}
+
+#anime-love-messages .message:nth-child(even) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Games Styles */
+#games .games-container {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#games button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #8e44ad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#games button:hover {
+    background-color: #9b59b6;
+}
+
+#game-result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e67e22;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}

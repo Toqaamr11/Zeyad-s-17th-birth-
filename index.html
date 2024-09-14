@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeyad's Anime Love Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Zeyad's Anime World</h1>
+            <nav>
+                <ul>
+                    <li><a href="#anime-love-messages">Love Messages</a></li>
+                    <li><a href="#games">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="anime-love-messages" class="section">
+            <div class="container">
+                <h2 class="section-title">Special Anime Love Messages for Zeyad</h2>
+                <div class="messages">
+                    <div class="message">
+                        <p>"Even in the darkest of days, your love shines brighter than the blue sky, making everything feel like an anime adventure."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Like a hero finding strength in the toughest battles, I find endless joy in every moment with you."</p>
+                    </div>
+                    <div class="message">
+                        <p>"You protect my heart like Chuuya’s gravity control, keeping me grounded and safe no matter what."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Our love is as unbreakable as the bond between Ranpo and his confidence. You make me believe in myself."</p>
+                    </div>
+                    <div class="message">
+                        <p>"With every smile you give me, you light up my world just as Dazai lights up the room with his witty charm."</p>
+                    </div>
+                    <div class="message">
+                        <p>"In every challenge, you are my inspiration, like how Atsushi found his inner strength through difficult times."</p>
+                    </div>
+                    <div class="message">
+                        <p>"I’d choose you in every lifetime, just as Dazai would always choose the agency. You are my first and last choice."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Every day with you is a new adventure, like Ranpo solving a mystery—exciting, full of surprises, and always fulfilling."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Your love is as strong and powerful as Akutagawa’s Rashomon, protecting and embracing me at every turn."</p>
+                    </div>
+                    <div class="message">
+                        <p>"In a world full of chaos, our love is my anchor, as solid and unwavering as Kunikida’s ideals."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Just like Dazai’s genius plans, being with you makes me feel like everything is falling into place perfectly."</p>
+                    </div>
+                    <div class="message">
+                        <p>"When I’m with you, I feel as invincible as Chuuya using Corruption—ready to face any challenge without fear."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Your presence in my life makes everything brighter, just like Atsushi's Tiger shining in the night."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Even when things are tough, you’re the strength I lean on, like the agency members rely on each other."</p>
+                    </div>
+                    <div class="message">
+                        <p>"Your love is my superpower, making me feel unstoppable, just like Dazai neutralizing any threat."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <div class="container">
+                <h2 class="section-title">Fun Anime Games</h2>
+                <div class="games-container">
+                    <button onclick="playGame()">Play a Game</button>
+                    <div id="game-result"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zeyad's Anime World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function playGame() {
+            document.getElementById('game-result').innerText = "Game is loading...";
+        }
+
+        document.querySelectorAll('#anime-love-messages .message').forEach(message => {
+            message.addEventListener('animationstart', () => {
+                // Additional JavaScript logic for animation if needed
+            });
+        });
+    </script>
+</body>
+</html>
